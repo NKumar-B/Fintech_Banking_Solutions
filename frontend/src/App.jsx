@@ -9,6 +9,7 @@ import TransactionsView from './components/TransactionsView';
 import CreateCustomerModal from './components/CreateCustomerModal';
 import OpenAccountModal from './components/OpenAccountModal';
 import PostmanGuideModal from './components/PostmanGuideModal';
+import { CheckCircle2 } from 'lucide-react';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -20,11 +21,19 @@ export default function App() {
   const [opsDefaultAcc, setOpsDefaultAcc] = useState('');
   const [opsDefaultMode, setOpsDefaultMode] = useState('deposit');
 
+  // Toast State
+  const [toastMessage, setToastMessage] = useState(null);
+
   // Modals state
   const [isCreateCustOpen, setIsCreateCustOpen] = useState(false);
   const [isOpenAccountOpen, setIsOpenAccountOpen] = useState(false);
   const [targetCustIdForAcc, setTargetCustIdForAcc] = useState(null);
   const [isPostmanGuideOpen, setIsPostmanGuideOpen] = useState(false);
+
+  const showToast = (msg) => {
+    setToastMessage(msg);
+    setTimeout(() => setToastMessage(null), 3000);
+  };
 
   const fetchAllData = useCallback(async () => {
     try {
@@ -71,7 +80,7 @@ export default function App() {
       <main className="main-content">
         {loading ? (
           <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-muted)' }}>
-            Loading Banking Engine data...
+            Connecting to Banking Engine...
           </div>
         ) : (
           <>
@@ -81,6 +90,7 @@ export default function App() {
                 accounts={accounts} 
                 onNavigate={setActiveTab}
                 onOpenCreateCustomer={() => setIsCreateCustOpen(true)}
+                onNavigateToOps={handleNavigateToOps}
               />
             )}
 
@@ -106,6 +116,7 @@ export default function App() {
                 onRefreshAccounts={fetchAllData}
                 defaultAccNumber={opsDefaultAcc}
                 defaultMode={opsDefaultMode}
+                showToast={showToast}
               />
             )}
 
@@ -118,11 +129,22 @@ export default function App() {
         )}
       </main>
 
+      {/* Toast Notification */}
+      {toastMessage && (
+        <div className="toast-notification">
+          <CheckCircle2 size={20} color="#34d399" />
+          <span>{toastMessage}</span>
+        </div>
+      )}
+
       {/* Modals */}
       <CreateCustomerModal 
         isOpen={isCreateCustOpen}
         onClose={() => setIsCreateCustOpen(false)}
-        onSuccess={() => fetchAllData()}
+        onSuccess={(data) => {
+          fetchAllData();
+          showToast(`Customer ${data.name} created successfully!`);
+        }}
       />
 
       <OpenAccountModal 
@@ -130,7 +152,10 @@ export default function App() {
         customers={customers}
         targetCustomerId={targetCustIdForAcc}
         onClose={() => { setIsOpenAccountOpen(false); setTargetCustIdForAcc(null); }}
-        onSuccess={() => fetchAllData()}
+        onSuccess={(acc) => {
+          fetchAllData();
+          showToast(`Account ${acc.accountNumber} opened successfully!`);
+        }}
       />
 
       <PostmanGuideModal 
