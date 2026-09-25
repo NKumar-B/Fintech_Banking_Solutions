@@ -1,0 +1,29 @@
+package com.bank.system.config;
+
+import io.swagger.v3.oas.models.OpenAPI;
+import io.swagger.v3.oas.models.info.Contact;
+import io.swagger.v3.oas.models.info.Info;
+import io.swagger.v3.oas.models.servers.Server;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import java.util.List;
+
+@Configuration
+public class OpenApiConfig {
+
+    @Bean
+    public OpenAPI bankingOpenAPI() {
+        return new OpenAPI()
+                .info(new Info()
+                        .title("Banking System REST API")
+                        .description("Fullstack Banking System Backend API providing Customer creation, Account management, Deposit/Withdrawal, Fund Transfers, and Paginated Transaction History with Date Filtering.")
+                        .version("1.0.0")
+                        .contact(new Contact()
+                                .name("Techurate Banking Engineering")
+                                .email("engineering@techurate.com")))
+                .servers(List.of(
+                        new Server().url("http://localhost:8080").description("Local Development Server")
+                ));
+    }
+}
