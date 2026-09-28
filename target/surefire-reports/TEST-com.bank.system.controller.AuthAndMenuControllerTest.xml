@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.bank.system.controller.AuthAndMenuControllerTest" time="19.321" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Techurate_Internship\Banking_system\target\test-classes;C:\Techurate_Internship\Banking_system\target\classes;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.4\spring-boot-starter-web-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.4\spring-boot-starter-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot\3.2.4\spring-boot-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.4\spring-boot-autoconfigure-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.4\spring-boot-starter-logging-3.2.4.jar;C:\Users\nithi\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\nithi\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\nithi\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\nithi\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\nithi\.m2\repository\org\slf4j\jul-to-slf4j\2.0.12\jul-to-slf4j-2.0.12.jar;C:\Users\nithi\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\nithi\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.4\spring-boot-starter-json-3.2.4.jar;C:\Users\nithi\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;C:\Users\nithi\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;C:\Users\nithi\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.4\spring-boot-starter-tomcat-3.2.4.jar;C:\Users\nithi\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.19\tomcat-embed-core-10.1.19.jar;C:\Users\nithi\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.19\tomcat-embed-websocket-10.1.19.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-beans\6.1.5\spring-beans-6.1.5.jar;C:\Users\nithi\.m2\repository\io\micrometer\micrometer-observation\1.12.4\micrometer-observation-1.12.4.jar;C:\Users\nithi\.m2\repository\io\micrometer\micrometer-commons\1.12.4\micrometer-commons-1.12.4.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-webmvc\6.1.5\spring-webmvc-6.1.5.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-context\6.1.5\spring-context-6.1.5.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-expression\6.1.5\spring-expression-6.1.5.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.2.4\spring-boot-starter-security-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-aop\6.1.5\spring-aop-6.1.5.jar;C:\Users\nithi\.m2\repository\org\springframework\security\spring-security-config\6.2.3\spring-security-config-6.2.3.jar;C:\Users\nithi\.m2\repository\org\springframework\security\spring-security-core\6.2.3\spring-security-core-6.2.3.jar;C:\Users\nithi\.m2\repository\org\springframework\security\spring-security-crypto\6.2.3\spring-security-crypto-6.2.3.jar;C:\Users\nithi\.m2\repository\org\springframework\security\spring-security-web\6.2.3\spring-security-web-6.2.3.jar;C:\Users\nithi\.m2\repository\io\jsonwebtoken\jjwt-api\0.11.5\jjwt-api-0.11.5.jar;C:\Users\nithi\.m2\repository\io\jsonwebtoken\jjwt-impl\0.11.5\jjwt-impl-0.11.5.jar;C:\Users\nithi\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.11.5\jjwt-jackson-0.11.5.jar;C:\Users\nithi\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;C:\Users\nithi\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;C:\Users\nithi\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.4\spring-boot-starter-data-jpa-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.4\spring-boot-starter-aop-3.2.4.jar;C:\Users\nithi\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.4\spring-boot-starter-jdbc-3.2.4.jar;C:\Users\nithi\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-jdbc\6.1.5\spring-jdbc-6.1.5.jar;C:\Users\nithi\.m2\repository\org\hibernate\orm\hibernate-core\6.4.4.Final\hibernate-core-6.4.4.Final.jar;C:\Users\nithi\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\nithi\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\nithi\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\nithi\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\nithi\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\nithi\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\nithi\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\nithi\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\nithi\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\nithi\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\nithi\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\nithi\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\nithi\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\nithi\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\nithi\.m2\repository\org\springframework\data\spring-data-jpa\3.2.4\spring-data-jpa-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\data\spring-data-commons\3.2.4\spring-data-commons-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-orm\6.1.5\spring-orm-6.1.5.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-tx\6.1.5\spring-tx-6.1.5.jar;C:\Users\nithi\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-aspects\6.1.5\spring-aspects-6.1.5.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.2.4\spring-boot-starter-validation-3.2.4.jar;C:\Users\nithi\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.19\tomcat-embed-el-10.1.19.jar;C:\Users\nithi\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\nithi\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\nithi\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\nithi\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\nithi\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.3.0\springdoc-openapi-starter-webmvc-ui-2.3.0.jar;C:\Users\nithi\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.3.0\springdoc-openapi-starter-webmvc-api-2.3.0.jar;C:\Users\nithi\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.3.0\springdoc-openapi-starter-common-2.3.0.jar;C:\Users\nithi\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.19\swagger-core-jakarta-2.2.19.jar;C:\Users\nithi\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\nithi\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.19\swagger-annotations-jakarta-2.2.19.jar;C:\Users\nithi\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.19\swagger-models-jakarta-2.2.19.jar;C:\Users\nithi\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.4\jackson-dataformat-yaml-2.15.4.jar;C:\Users\nithi\.m2\repository\org\webjars\swagger-ui\5.10.3\swagger-ui-5.10.3.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.4\spring-boot-starter-test-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-test\3.2.4\spring-boot-test-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.4\spring-boot-test-autoconfigure-3.2.4.jar;C:\Users\nithi\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\nithi\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\nithi\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\nithi\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\nithi\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\nithi\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\nithi\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\nithi\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\nithi\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\nithi\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\nithi\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\nithi\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\nithi\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\nithi\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\nithi\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\nithi\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\nithi\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\nithi\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\nithi\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar;C:\Users\nithi\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\nithi\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\nithi\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\nithi\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-core\6.1.5\spring-core-6.1.5.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-jcl\6.1.5\spring-jcl-6.1.5.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-test\6.1.5\spring-test-6.1.5.jar;C:\Users\nithi\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\nithi\AppData\Local\Temp\surefire12664631136680695704\surefirebooter-20260928095418804_3.jar C:\Users\nithi\AppData\Local\Temp\surefire12664631136680695704 2026-09-28T09-54-18_310-jvmRun1 surefire-20260928095418804_1tmp surefire_0-20260928095418804_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Techurate_Internship\Banking_system\target\test-classes;C:\Techurate_Internship\Banking_system\target\classes;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.4\spring-boot-starter-web-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.4\spring-boot-starter-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot\3.2.4\spring-boot-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.4\spring-boot-autoconfigure-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.4\spring-boot-starter-logging-3.2.4.jar;C:\Users\nithi\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\nithi\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\nithi\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\nithi\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\nithi\.m2\repository\org\slf4j\jul-to-slf4j\2.0.12\jul-to-slf4j-2.0.12.jar;C:\Users\nithi\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\nithi\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.4\spring-boot-starter-json-3.2.4.jar;C:\Users\nithi\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;C:\Users\nithi\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;C:\Users\nithi\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.4\spring-boot-starter-tomcat-3.2.4.jar;C:\Users\nithi\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.19\tomcat-embed-core-10.1.19.jar;C:\Users\nithi\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.19\tomcat-embed-websocket-10.1.19.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-web\6.1.5\spring-web-6.1.5.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-beans\6.1.5\spring-beans-6.1.5.jar;C:\Users\nithi\.m2\repository\io\micrometer\micrometer-observation\1.12.4\micrometer-observation-1.12.4.jar;C:\Users\nithi\.m2\repository\io\micrometer\micrometer-commons\1.12.4\micrometer-commons-1.12.4.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-webmvc\6.1.5\spring-webmvc-6.1.5.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-context\6.1.5\spring-context-6.1.5.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-expression\6.1.5\spring-expression-6.1.5.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.2.4\spring-boot-starter-security-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-aop\6.1.5\spring-aop-6.1.5.jar;C:\Users\nithi\.m2\repository\org\springframework\security\spring-security-config\6.2.3\spring-security-config-6.2.3.jar;C:\Users\nithi\.m2\repository\org\springframework\security\spring-security-core\6.2.3\spring-security-core-6.2.3.jar;C:\Users\nithi\.m2\repository\org\springframework\security\spring-security-crypto\6.2.3\spring-security-crypto-6.2.3.jar;C:\Users\nithi\.m2\repository\org\springframework\security\spring-security-web\6.2.3\spring-security-web-6.2.3.jar;C:\Users\nithi\.m2\repository\io\jsonwebtoken\jjwt-api\0.11.5\jjwt-api-0.11.5.jar;C:\Users\nithi\.m2\repository\io\jsonwebtoken\jjwt-impl\0.11.5\jjwt-impl-0.11.5.jar;C:\Users\nithi\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.11.5\jjwt-jackson-0.11.5.jar;C:\Users\nithi\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;C:\Users\nithi\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;C:\Users\nithi\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.4\spring-boot-starter-data-jpa-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.4\spring-boot-starter-aop-3.2.4.jar;C:\Users\nithi\.m2\repository\org\aspectj\aspectjweaver\1.9.21\aspectjweaver-1.9.21.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.4\spring-boot-starter-jdbc-3.2.4.jar;C:\Users\nithi\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-jdbc\6.1.5\spring-jdbc-6.1.5.jar;C:\Users\nithi\.m2\repository\org\hibernate\orm\hibernate-core\6.4.4.Final\hibernate-core-6.4.4.Final.jar;C:\Users\nithi\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\nithi\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\nithi\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\nithi\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\nithi\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\nithi\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\nithi\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\nithi\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\nithi\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\nithi\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\nithi\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\nithi\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\nithi\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\nithi\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\nithi\.m2\repository\org\springframework\data\spring-data-jpa\3.2.4\spring-data-jpa-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\data\spring-data-commons\3.2.4\spring-data-commons-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-orm\6.1.5\spring-orm-6.1.5.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-tx\6.1.5\spring-tx-6.1.5.jar;C:\Users\nithi\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-aspects\6.1.5\spring-aspects-6.1.5.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.2.4\spring-boot-starter-validation-3.2.4.jar;C:\Users\nithi\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.19\tomcat-embed-el-10.1.19.jar;C:\Users\nithi\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\nithi\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\nithi\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;C:\Users\nithi\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\nithi\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.3.0\springdoc-openapi-starter-webmvc-ui-2.3.0.jar;C:\Users\nithi\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.3.0\springdoc-openapi-starter-webmvc-api-2.3.0.jar;C:\Users\nithi\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.3.0\springdoc-openapi-starter-common-2.3.0.jar;C:\Users\nithi\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.19\swagger-core-jakarta-2.2.19.jar;C:\Users\nithi\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\nithi\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.19\swagger-annotations-jakarta-2.2.19.jar;C:\Users\nithi\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.19\swagger-models-jakarta-2.2.19.jar;C:\Users\nithi\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.4\jackson-dataformat-yaml-2.15.4.jar;C:\Users\nithi\.m2\repository\org\webjars\swagger-ui\5.10.3\swagger-ui-5.10.3.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.4\spring-boot-starter-test-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-test\3.2.4\spring-boot-test-3.2.4.jar;C:\Users\nithi\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.4\spring-boot-test-autoconfigure-3.2.4.jar;C:\Users\nithi\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\nithi\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\nithi\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\nithi\.m2\repository\net\minidev\json-smart\2.5.0\json-smart-2.5.0.jar;C:\Users\nithi\.m2\repository\net\minidev\accessors-smart\2.5.0\accessors-smart-2.5.0.jar;C:\Users\nithi\.m2\repository\org\ow2\asm\asm\9.3\asm-9.3.jar;C:\Users\nithi\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\nithi\.m2\repository\org\awaitility\awaitility\4.2.0\awaitility-4.2.0.jar;C:\Users\nithi\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\nithi\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\nithi\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\nithi\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\nithi\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\nithi\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\nithi\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\nithi\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\nithi\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\nithi\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\nithi\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.12\byte-buddy-agent-1.14.12.jar;C:\Users\nithi\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\nithi\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\nithi\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\nithi\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-core\6.1.5\spring-core-6.1.5.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-jcl\6.1.5\spring-jcl-6.1.5.jar;C:\Users\nithi\.m2\repository\org\springframework\spring-test\6.1.5\spring-test-6.1.5.jar;C:\Users\nithi\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\nithi"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2026-08-18"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Techurate_Internship\Banking_system"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="windows-1252"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\nithi\AppData\Local\Temp\surefire12664631136680695704\surefirebooter-20260928095418804_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.20.1+1"/>
+    <property name="user.name" value="Nithin"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.20.1+1"/>
+    <property name="localRepository" value="C:\Users\nithi\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\nithi\AppData\Local\Temp\"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="17.0.20.1"/>
+    <property name="user.dir" value="C:\Techurate_Internship\Banking_system"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="8432"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="windows-1252"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:/Users/nithi/.gemini/antigravity-ide/bin;C:\Program Files\Eclipse Adoptium\jdk-17.0.20.101-hotspot\bin;C:\Python314\Scripts\;C:\Python314\;C:\Program Files\Eclipse Adoptium\jdk-25.0.1.8-hotspot\bin;C:\Python313\Scripts\;C:\Python313\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Program Files\HP\OMEN-Broadcast\Common;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\Git\cmd;C:\Program Files\Git\cmd;C:\wokwi-cli;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Program Files\Apache\apache-maven-3.9.16\bin;C:\Users\nithi\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\nithi\AppData\Local\Programs\Python\Python311\;C:\Users\nithi\.cargo\bin;C:\Users\nithi\AppData\Local\Microsoft\WindowsApps;C:\Users\nithi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nithi\AppData\Roaming\npm;C:\Users\nithi\AppData\Local\GitHubDesktop\bin;C:\Users\nithi\AppData\Local\Programs\Antigravity IDE\bin;C:\Users\nithi\AppData\Local\Programs\mongosh\;C:\Users\nithi\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Program Files\JetBrains\IntelliJ IDEA 2026.2.3\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.20.1+1"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[banking-system] "/>
+  </properties>
+  <testcase name="testGetNavbarMenuWithoutToken_ShouldReturn401" classname="com.bank.system.controller.AuthAndMenuControllerTest" time="1.329">
+    <system-out><![CDATA[09:54:21.016 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.bank.system.controller.AuthAndMenuControllerTest]: AuthAndMenuControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:54:21.605 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.bank.system.BankingSystemApplication for test class com.bank.system.controller.AuthAndMenuControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.4)
+
+2026-09-28T09:54:22.880+05:30  INFO 8432 --- [banking-system] [           main] c.b.s.c.AuthAndMenuControllerTest        : Starting AuthAndMenuControllerTest using Java 17.0.20.1 with PID 8432 (started by Nithin in C:\Techurate_Internship\Banking_system)
+2026-09-28T09:54:22.882+05:30  INFO 8432 --- [banking-system] [           main] c.b.s.c.AuthAndMenuControllerTest        : No active profile set, falling back to 1 default profile: "default"
+2026-09-28T09:54:25.136+05:30  INFO 8432 --- [banking-system] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-28T09:54:25.355+05:30  INFO 8432 --- [banking-system] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 193 ms. Found 4 JPA repository interfaces.
+2026-09-28T09:54:26.751+05:30  INFO 8432 --- [banking-system] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-09-28T09:54:27.065+05:30  INFO 8432 --- [banking-system] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2026-09-28T09:54:27.199+05:30  INFO 8432 --- [banking-system] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-09-28T09:54:27.826+05:30  INFO 8432 --- [banking-system] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-28T09:54:27.949+05:30  INFO 8432 --- [banking-system] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-28T09:54:28.606+05:30  INFO 8432 --- [banking-system] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bankdb user=SA
+2026-09-28T09:54:28.613+05:30  INFO 8432 --- [banking-system] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-28T09:54:28.720+05:30  WARN 8432 --- [banking-system] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-09-28T09:54:31.777+05:30  INFO 8432 --- [banking-system] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: 
+    create table accounts (
+        id bigint generated by default as identity,
+        account_number varchar(30) not null,
+        account_type varchar(20) not null check (account_type in ('SAVINGS','CHECKING','BUSINESS')),
+        balance numeric(15,2) not null,
+        created_at timestamp(6) not null,
+        currency varchar(10) not null,
+        status varchar(20) not null check (status in ('ACTIVE','FROZEN','CLOSED')),
+        customer_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table customers (
+        id bigint generated by default as identity,
+        address varchar(255),
+        created_at timestamp(6) not null,
+        email varchar(100) not null,
+        name varchar(100) not null,
+        phone varchar(20),
+        primary key (id)
+    )
+Hibernate: 
+    create table transactions (
+        id bigint generated by default as identity,
+        amount numeric(15,2) not null,
+        balance_after numeric(15,2) not null,
+        description varchar(255),
+        related_account_number varchar(30),
+        timestamp timestamp(6) not null,
+        transaction_reference varchar(50) not null,
+        type varchar(20) not null check (type in ('DEPOSIT','WITHDRAWAL','TRANSFER_IN','TRANSFER_OUT')),
+        account_id bigint not null,
+        primary key (id)
+    )
+Hibernate: 
+    create table users (
+        id bigint generated by default as identity,
+        created_at timestamp(6) not null,
+        email varchar(100) not null,
+        name varchar(100) not null,
+        password varchar(255) not null,
+        phone varchar(20),
+        role varchar(20) not null check (role in ('ROLE_USER','ROLE_ADMIN')),
+        username varchar(50) not null,
+        customer_id bigint,
+        primary key (id)
+    )
+Hibernate: 
+    alter table if exists accounts 
+       drop constraint if exists UK_6kplolsdtr3slnvx97xsy2kc8
+Hibernate: 
+    alter table if exists accounts 
+       add constraint UK_6kplolsdtr3slnvx97xsy2kc8 unique (account_number)
+Hibernate: 
+    alter table if exists customers 
+       drop constraint if exists UK_rfbvkrffamfql7cjmen8v976v
+Hibernate: 
+    alter table if exists customers 
+       add constraint UK_rfbvkrffamfql7cjmen8v976v unique (email)
+Hibernate: 
+    alter table if exists transactions 
+       drop constraint if exists UK_94m9euoxupnom1p8mtwmk9q4g
+Hibernate: 
+    alter table if exists transactions 
+       add constraint UK_94m9euoxupnom1p8mtwmk9q4g unique (transaction_reference)
+Hibernate: 
+    alter table if exists users 
+       drop constraint if exists UK_6dotkott2kjsp8vw4d0m25fb7
+Hibernate: 
+    alter table if exists users 
+       add constraint UK_6dotkott2kjsp8vw4d0m25fb7 unique (email)
+Hibernate: 
+    alter table if exists users 
+       drop constraint if exists UK_r43af9ap4edm43mmtq01oddj6
+Hibernate: 
+    alter table if exists users 
+       add constraint UK_r43af9ap4edm43mmtq01oddj6 unique (username)
+Hibernate: 
+    alter table if exists users 
+       drop constraint if exists UK_72efjd5u3nqtjdduip5wwvd39
+Hibernate: 
+    alter table if exists users 
+       add constraint UK_72efjd5u3nqtjdduip5wwvd39 unique (customer_id)
+Hibernate: 
+    alter table if exists accounts 
+       add constraint FKn6x8pdp50os8bq5rbb792upse 
+       foreign key (customer_id) 
+       references customers
+Hibernate: 
+    alter table if exists transactions 
+       add constraint FK20w7wsg13u9srbq3bd7chfxdh 
+       foreign key (account_id) 
+       references accounts
+Hibernate: 
+    alter table if exists users 
+       add constraint FKchxdoybbydcaj5smgxe0qq5mk 
+       foreign key (customer_id) 
+       references customers
+2026-09-28T09:54:32.003+05:30  INFO 8432 --- [banking-system] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-28T09:54:33.182+05:30  INFO 8432 --- [banking-system] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-28T09:54:34.893+05:30  WARN 8432 --- [banking-system] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-28T09:54:34.940+05:30  WARN 8432 --- [banking-system] [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9ba1e5bc-cc26-4021-bbea-6ddecf75b78a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-09-28T09:54:35.231+05:30  INFO 8432 --- [banking-system] [           main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-09-28T09:54:35.872+05:30  INFO 8432 --- [banking-system] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e5506c9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@446b74b9, org.springframework.security.web.context.SecurityContextHolderFilter@6d8dc329, org.springframework.security.web.header.HeaderWriterFilter@29c8a858, org.springframework.web.filter.CorsFilter@41d0b71d, org.springframework.security.web.authentication.logout.LogoutFilter@6bc6400e, com.bank.system.config.JwtAuthenticationFilter@4a0934a8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@39c437e9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7049d079, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5a4f7911, org.springframework.security.web.session.SessionManagementFilter@3579682, org.springframework.security.web.access.ExceptionTranslationFilter@28566aad, org.springframework.security.web.access.intercept.AuthorizationFilter@7d0ae3d1]
+2026-09-28T09:54:36.504+05:30  INFO 8432 --- [banking-system] [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bankdb'
+2026-09-28T09:54:36.618+05:30  INFO 8432 --- [banking-system] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-09-28T09:54:36.618+05:30  INFO 8432 --- [banking-system] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-28T09:54:36.619+05:30  INFO 8432 --- [banking-system] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-09-28T09:54:36.670+05:30  INFO 8432 --- [banking-system] [           main] c.b.s.c.AuthAndMenuControllerTest        : Started AuthAndMenuControllerTest in 14.561 seconds (process running for 17.563)
+2026-09-28T09:54:36.679+05:30  INFO 8432 --- [banking-system] [           main] com.bank.system.config.DataInitializer   : Seeding Initial Demo Banking Data...
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, customer_id, email, name, password, phone, role, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+2026-09-28T09:54:37.101+05:30  INFO 8432 --- [banking-system] [           main] com.bank.system.config.DataInitializer   : Seeded Admin user: 'admin' / 'admin123'
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        customers c1_0 
+    where
+        c1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    insert 
+    into
+        customers
+        (address, created_at, email, name, phone, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        a1_0.id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_number=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    insert 
+    into
+        accounts
+        (account_number, account_type, balance, created_at, currency, customer_id, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        transactions
+        (account_id, amount, balance_after, description, related_account_number, timestamp, transaction_reference, type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.name,
+        c1_0.phone 
+    from
+        customers c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, customer_id, email, name, password, phone, role, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+2026-09-28T09:54:37.436+05:30  INFO 8432 --- [banking-system] [           main] com.bank.system.config.DataInitializer   : Seeded Demo User: 'alex' / 'password123'
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.name,
+        c1_0.phone 
+    from
+        customers c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        a1_0.id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_number=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    insert 
+    into
+        accounts
+        (account_number, account_type, balance, created_at, currency, customer_id, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        transactions
+        (account_id, amount, balance_after, description, related_account_number, timestamp, transaction_reference, type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        count(*) 
+    from
+        customers c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.customer_id,
+        a1_0.status 
+    from
+        accounts a1_0 
+    left join
+        customers c1_0 
+            on c1_0.id=a1_0.customer_id 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.name,
+        c1_0.phone 
+    from
+        customers c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        customers c1_0 
+    where
+        c1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    insert 
+    into
+        customers
+        (address, created_at, email, name, phone, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        a1_0.id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_number=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    insert 
+    into
+        accounts
+        (account_number, account_type, balance, created_at, currency, customer_id, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        transactions
+        (account_id, amount, balance_after, description, related_account_number, timestamp, transaction_reference, type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.name,
+        c1_0.phone 
+    from
+        customers c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, customer_id, email, name, password, phone, role, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+2026-09-28T09:54:37.649+05:30  INFO 8432 --- [banking-system] [           main] com.bank.system.config.DataInitializer   : Seeded Demo User: 'sophia' / 'password123'
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        customers c1_0 
+    where
+        c1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    insert 
+    into
+        customers
+        (address, created_at, email, name, phone, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        a1_0.id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_number=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    insert 
+    into
+        accounts
+        (account_number, account_type, balance, created_at, currency, customer_id, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        transactions
+        (account_id, amount, balance_after, description, related_account_number, timestamp, transaction_reference, type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.created_at,
+        c1_0.email,
+        c1_0.name,
+        c1_0.phone 
+    from
+        customers c1_0 
+    where
+        c1_0.id=?
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, customer_id, email, name, password, phone, role, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+2026-09-28T09:54:37.796+05:30  INFO 8432 --- [banking-system] [           main] com.bank.system.config.DataInitializer   : Seeded Demo User: 'marcus' / 'password123'
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.customer_id,
+        a1_0.status 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_number=?
+Hibernate: 
+    insert 
+    into
+        transactions
+        (account_id, amount, balance_after, description, related_account_number, timestamp, transaction_reference, type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    update
+        accounts 
+    set
+        account_number=?,
+        account_type=?,
+        balance=?,
+        currency=?,
+        customer_id=?,
+        status=? 
+    where
+        id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.customer_id,
+        a1_0.status 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_number=?
+Hibernate: 
+    insert 
+    into
+        transactions
+        (account_id, amount, balance_after, description, related_account_number, timestamp, transaction_reference, type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    update
+        accounts 
+    set
+        account_number=?,
+        account_type=?,
+        balance=?,
+        currency=?,
+        customer_id=?,
+        status=? 
+    where
+        id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.customer_id,
+        a1_0.status 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_number=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.customer_id,
+        a1_0.status 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_number=?
+Hibernate: 
+    insert 
+    into
+        transactions
+        (account_id, amount, balance_after, description, related_account_number, timestamp, transaction_reference, type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        transactions
+        (account_id, amount, balance_after, description, related_account_number, timestamp, transaction_reference, type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    update
+        accounts 
+    set
+        account_number=?,
+        account_type=?,
+        balance=?,
+        currency=?,
+        customer_id=?,
+        status=? 
+    where
+        id=?
+Hibernate: 
+    update
+        accounts 
+    set
+        account_number=?,
+        account_type=?,
+        balance=?,
+        currency=?,
+        customer_id=?,
+        status=? 
+    where
+        id=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.customer_id,
+        a1_0.status 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_number=?
+Hibernate: 
+    select
+        a1_0.id,
+        a1_0.account_number,
+        a1_0.account_type,
+        a1_0.balance,
+        a1_0.created_at,
+        a1_0.currency,
+        a1_0.customer_id,
+        a1_0.status 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_number=?
+Hibernate: 
+    insert 
+    into
+        transactions
+        (account_id, amount, balance_after, description, related_account_number, timestamp, transaction_reference, type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        transactions
+        (account_id, amount, balance_after, description, related_account_number, timestamp, transaction_reference, type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    update
+        accounts 
+    set
+        account_number=?,
+        account_type=?,
+        balance=?,
+        currency=?,
+        customer_id=?,
+        status=? 
+    where
+        id=?
+Hibernate: 
+    update
+        accounts 
+    set
+        account_number=?,
+        account_type=?,
+        balance=?,
+        currency=?,
+        customer_id=?,
+        status=? 
+    where
+        id=?
+2026-09-28T09:54:37.899+05:30  INFO 8432 --- [banking-system] [           main] com.bank.system.config.DataInitializer   : Demo Data Initialization Complete!
+2026-09-28T09:54:37.900+05:30  INFO 8432 --- [banking-system] [           main] com.bank.system.config.DataInitializer   : Alex Morgan Customer ID: 1
+2026-09-28T09:54:37.900+05:30  INFO 8432 --- [banking-system] [           main] com.bank.system.config.DataInitializer   : Alex Savings Account: ACC7238085433
+2026-09-28T09:54:37.900+05:30  INFO 8432 --- [banking-system] [           main] com.bank.system.config.DataInitializer   : Alex Checking Account: ACC3288070694
+2026-09-28T09:54:37.900+05:30  INFO 8432 --- [banking-system] [           main] com.bank.system.config.DataInitializer   : Sophia Savings Account: ACC5690526802
+]]></system-out>
+  </testcase>
+  <testcase name="testRegisterLoginAndGetNavbarMenuWithToken" classname="com.bank.system.controller.AuthAndMenuControllerTest" time="0.666">
+    <system-out><![CDATA[2026-09-28T09:54:39.512+05:30  INFO 8432 --- [banking-system] [           main] com.bank.system.service.AuthService      : Processing user registration for username: alicesmith
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    select
+        c1_0.id 
+    from
+        customers c1_0 
+    where
+        c1_0.email=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    insert 
+    into
+        customers
+        (address, created_at, email, name, phone, id) 
+    values
+        (?, ?, ?, ?, ?, default)
+Hibernate: 
+    select
+        a1_0.id 
+    from
+        accounts a1_0 
+    where
+        a1_0.account_number=? 
+    fetch
+        first ? rows only
+Hibernate: 
+    insert 
+    into
+        accounts
+        (account_number, account_type, balance, created_at, currency, customer_id, status, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        transactions
+        (account_id, amount, balance_after, description, related_account_number, timestamp, transaction_reference, type, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    insert 
+    into
+        users
+        (created_at, customer_id, email, name, password, phone, role, username, id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+2026-09-28T09:54:39.741+05:30  INFO 8432 --- [banking-system] [           main] com.bank.system.service.AuthService      : Processing login request for: alicesmith
+Hibernate: 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.customer_id,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+        or u1_0.email=?
+]]></system-out>
+  </testcase>
+</testsuite>
